@@ -1,0 +1,55 @@
+@media (max-width: 500px) {
+    .cabecalho__navegacao__itens {
+        display: none;
+    }
+    .container__carrosssel__imagem {
+        width: 100%;
+    }
+    .container__sobre {
+        justify-content: center;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 4fr 4fr;
+    }
+    .container__sobre__titulo {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .container__sobre__texto {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .container__sobre__foto {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    .container__adocao__animais-animal {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .container__adocao__animais__animal {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+                            "animal1"
+                            "animal2"
+                            "animal3"
+                            "animal4"
+                            "animal5"
+                            "animal6";
+    }
+    .container__endereco {
+        row-gap: 3rem;
+        grid-template-areas: 
+                            "enderecoFoto"
+                            "enderecoTitulo"
+                            "enderecoLocal";
+    }
+    .container__endereco__foto {
+
+        justify-self: center;
+    }
+    .container__endereco__local {
+        text-align: center;
+    }
+}

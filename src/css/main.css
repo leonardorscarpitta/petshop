@@ -13,7 +13,6 @@ CARROSSEL
 .container__carrosssel__imagem {
     border-radius: 2px;
     width: 60%;
-    max-height: 40%;
 }
 
 /*
@@ -227,11 +226,11 @@ DE PETS
     background-color: var(--cor-amarelo2);
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
-                        "animal1 animal2"
-                        "animal3 animal4";
+                        "animal1 animal2 animal3"
+                        "animal4 animal5 animal6";
 }
 
 .container__adocao__animais__animal-adotavel {
@@ -253,6 +252,7 @@ DE PETS
 
 .container__adocao__animais__animal-adotavel__foto {
     justify-self: center;
+    border-radius: 5px;
     width: 15rem;
 }
 
