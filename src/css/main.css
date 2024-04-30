@@ -1,0 +1,56 @@
+/*
+ESTILIZAÇÃO
+DO 
+CARROSSEL
+*/
+.container__carrossel {
+    display: flex;
+    justify-content: center;
+    padding: 0.4rem 0;
+    background-color: var(--cor-amarelo2);
+}
+
+.container__carrosssel__imagem {
+    border-radius: 2px;
+}
+
+
+/*
+ESTILIZAÇÃO
+DA SEÇÃO
+SOBRE NÓS
+*/
+.container__sobre {
+    background-color: var(--cor-marrom);
+    font-weight: 800;
+    padding: 1rem 0 0 1rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.container__sobre__titulo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    text-transform: uppercase;
+    color: white;
+    font-size: 4rem;
+    font-family: var(--fonte-primaria);
+}
+
+.container__sobre__texto {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    font-weight: 500;
+    color: white;
+    text-align: justify;
+    font-size: 1rem;
+    font-family: var(--fonte-primaria);
+}
+
+.container__sobre__foto {
+    grid-column: 2 / 3;
+    grid-row: 2 / end;
+    width: 16rem;
+}
