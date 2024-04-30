@@ -13,8 +13,8 @@ CARROSSEL
 .container__carrosssel__imagem {
     border-radius: 2px;
     width: 60%;
+    max-height: 40%;
 }
-
 
 /*
 ESTILIZAÇÃO
@@ -74,9 +74,11 @@ DE LOJA
     grid-area: titulo;
     text-transform: uppercase;
     color: black;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: var(--fonte-primaria);
     font-weight: 800;
+    border-bottom: 1px solid black;
+    padding-bottom: 1rem;
 }
 
 .container__loja__produtos {
@@ -302,6 +304,7 @@ DE ENDEREÇO
 .container__endereco__foto {
     grid-area: enderecoFoto;
     width: 17rem;
+    justify-self: end;
 }
 
 .container__endereco__titulo {
