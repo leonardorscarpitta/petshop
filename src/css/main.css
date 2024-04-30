@@ -6,12 +6,13 @@ CARROSSEL
 .container__carrossel {
     display: flex;
     justify-content: center;
-    padding: 0.4rem 0;
+    padding: 0.5rem 0;
     background-color: var(--cor-amarelo2);
 }
 
 .container__carrosssel__imagem {
     border-radius: 2px;
+    width: 60%;
 }
 
 
@@ -209,4 +210,74 @@ ELEMENTOS
 }
 .cachorroF {
     grid-area: cachorroF;
+}
+
+/* 
+ESTILIZAÇÃO
+DA SEÇÃO
+DE PETS
+*/
+
+.container__adocao__animais__animal {
+    gap: 4rem;
+    padding: 2rem 0;
+    background-color: var(--cor-amarelo2);
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+                        "animal1 animal2"
+                        "animal3 animal4";
+}
+
+.container__adocao__animais__animal-adotavel {
+    display: grid;
+    row-gap: 1rem;
+    grid-template-areas: 
+                        "nomeAnimal"
+                        "fotoAnimal"
+                        "botaoAdotar";
+}
+
+.container__adocao__animais__animal-adotavel__nome {
+    justify-self: center;
+    color: #000;
+    font-family: var(--fonte-primaria);
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.container__adocao__animais__animal-adotavel__foto {
+    justify-self: center;
+    width: 15rem;
+}
+
+.container__adocao__animais__animal-adotavel__botao {
+    justify-self: center;
+    background: var(--cor-marrom);
+    color: white;
+    font-weight: 800;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.container__adocao__animais__animal-adotavel__botao:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.bela {
+    grid-area: animal1;
+}
+.leo {
+    grid-area: animal2;
+}
+.bailey {
+    grid-area: animal3;
+}
+.daisy {
+    grid-area: animal4;
 }
