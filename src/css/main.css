@@ -62,7 +62,7 @@ DA SEÇÃO
 DE LOJA
 */
 .container__loja {
-    padding: 1rem 3rem;
+    padding: 2rem 3rem;
     gap: 2rem;
     background-color: var(--cor-amarelo2);
     grid-template-rows: 1fr 6fr;
@@ -84,16 +84,20 @@ DE LOJA
     display: grid;
     text-align: center;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
                         "produto1 produto2 produto3"
                         "produto4 produto5 produto6";
 }
 
  .container__loja__produtos__produto {
+    background-color: var(--cor-laranja);
+    border-radius: 16px;
     display: grid;
     row-gap: 0.8rem;
     justify-content: center;
+    padding: 2rem 0;
+    border: 1px solid black;
 }
 
 .container__loja__produtos__produto__texto {
@@ -119,16 +123,23 @@ DE LOJA
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: all .2s;
+}
+
+.container__loja__produtos__produto__botao-compra:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .container__loja__produtos__produto__imagem {
     width: 10rem;
-    text-align: center;
+    justify-self: center;
 }
 
-/* POSICIONANDO
+/* 
+POSICIONANDO
 OS 
-PRODUTOS */
+PRODUTOS 
+*/
 .produto1 {
     grid-area: produto1;
 }
@@ -146,4 +157,56 @@ PRODUTOS */
 }
 .produto6 {
     grid-area: produto6;
+}
+
+/*
+ESTILIZAÇÃO
+DA SEÇÃO
+DE ADOÇÃO
+*/
+.container__adocao__animais {
+    padding-top: 1rem;
+    justify-items: center;
+    background-color: var(--cor-marrom);
+    display: grid;
+    row-gap: 2rem;
+    align-items: center;
+    grid-template-areas: 
+                        "gatoT cachorroT"
+                        "gatoF cachorroF";
+}
+
+.container__adocao__animais-animal {
+    text-transform: uppercase;
+    color: white;
+    font-size: 2rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 800;
+}
+
+.container__adocao__animais-animal strong {
+    color: var(--cor-laranja);
+}
+
+.container__adocao__animais__foto {
+    max-width: 15rem;
+    height: 15rem;
+}
+
+/* 
+POSICIONANDO
+OS 
+ELEMENTOS 
+*/
+.cachorroF {
+    grid-area: cachorroF;
+}
+.gatoF {
+    grid-area: gatoF;
+}
+.cachorroT {
+    grid-area: cachorroT;
+}
+.cachorroF {
+    grid-area: cachorroF;
 }
