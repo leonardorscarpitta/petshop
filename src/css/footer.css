@@ -1,0 +1,15 @@
+.rodape {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    background-color: var(--cor-amarelo1);
+    text-align: center;
+    padding: 2rem;
+}
+
+.rodape__texto {
+    font-family: var(--fonte-primaria);
+    color: #5B5A50;
+    font-size: 1rem;
+    font-weight: 600;
+}

@@ -92,12 +92,13 @@ DE LOJA
 }
 
  .container__loja__produtos__produto {
+    justify-self: center;
     background-color: var(--cor-laranja);
     border-radius: 16px;
     display: grid;
     row-gap: 0.8rem;
     justify-content: center;
-    padding: 2rem 0;
+    padding: 2rem;
     border: 1px solid black;
 }
 
@@ -280,4 +281,43 @@ DE PETS
 }
 .daisy {
     grid-area: animal4;
+}
+
+/* 
+ESTILIZANDO
+A SEÇÃO
+DE ENDEREÇO
+*/
+.container__endereco {
+    background-color: var(--cor-marrom);
+    padding: 2rem;
+    display: grid;
+    align-items: center;
+    grid-template-areas: 
+                        "enderecoFoto enderecoTitulo"
+                        "enderecoFoto enderecoLocal";
+}
+
+.container__endereco__foto {
+    grid-area: enderecoFoto;
+    width: 17rem;
+}
+
+.container__endereco__titulo {
+    text-transform: uppercase;
+    justify-self: center;
+    font-family: var(--fonte-primaria);
+    font-size: 4rem;
+    font-weight: 800;
+    grid-area: enderecoTitulo;
+    color: white;
+}
+
+.container__endereco__local {
+    font-size: 2rem;
+    font-family: var(--fonte-primaria);
+    justify-self: center;
+    align-self: start;
+    grid-area: enderecoLocal;
+    color: white;
 }
