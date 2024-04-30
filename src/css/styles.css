@@ -1,0 +1,15 @@
+@import url('header.css');
+@import url('main.css');
+@import url('footer.css');
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    /* PALETA DE CORES */
+    --cor-marrom: #61413E;
+    --cor-laranja: #F6921E;
+    --cor-amarelo1: #EBB365;
+    --cor-amarelo2: #F2B61B;
+    /* FONTES */
+    --fonte-site: "Roboto", sans-serif;;
+}
