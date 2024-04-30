@@ -21,11 +21,12 @@ DA SEÇÃO
 SOBRE NÓS
 */
 .container__sobre {
+    padding: 1rem 3rem 0 3rem;
     background-color: var(--cor-marrom);
     font-weight: 800;
-    padding: 1rem 0 0 1rem;
     display: grid;
     align-items: center;
+    justify-items: center;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr 4fr;
 }
@@ -35,7 +36,7 @@ SOBRE NÓS
     grid-row: 1 / 2;
     text-transform: uppercase;
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     font-family: var(--fonte-primaria);
 }
 
@@ -52,5 +53,97 @@ SOBRE NÓS
 .container__sobre__foto {
     grid-column: 2 / 3;
     grid-row: 2 / end;
-    width: 16rem;
+    width: 18rem;
+}
+
+/*
+ESTILIZAÇÃO
+DA SEÇÃO
+DE LOJA
+*/
+.container__loja {
+    padding: 1rem 3rem;
+    gap: 2rem;
+    background-color: var(--cor-amarelo2);
+    grid-template-rows: 1fr 6fr;
+}
+
+.container__loja__titulo {
+    margin-bottom: 2rem;
+    grid-area: titulo;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 3rem;
+    font-family: var(--fonte-primaria);
+    font-weight: 800;
+}
+
+.container__loja__produtos {
+    grid-area: produtos;
+    gap: 2rem;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+                        "produto1 produto2 produto3"
+                        "produto4 produto5 produto6";
+}
+
+ .container__loja__produtos__produto {
+    display: grid;
+    row-gap: 0.8rem;
+    justify-content: center;
+}
+
+.container__loja__produtos__produto__texto {
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+    font-family: var(--fonte-primaria);
+}
+
+.pAntigo {
+    color: red;
+}
+
+.pNovo {
+    color: green;
+}
+
+.container__loja__produtos__produto__botao-compra {
+    background: var(--cor-marrom);
+    color: white;
+    font-weight: 800;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container__loja__produtos__produto__imagem {
+    width: 10rem;
+    text-align: center;
+}
+
+/* POSICIONANDO
+OS 
+PRODUTOS */
+.produto1 {
+    grid-area: produto1;
+}
+.produto2 {
+    grid-area: produto2;
+}
+.produto3 {
+    grid-area: produto3;
+}
+.produto4 {
+    grid-area: produto4;
+}
+.produto5 {
+    grid-area: produto5;
+}
+.produto6 {
+    grid-area: produto6;
 }
