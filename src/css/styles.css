@@ -14,3 +14,7 @@
     --fonte-primaria: "Roboto", sans-serif;
     --fonte-secundaria: "Rubik Mono One", monospace;
 }
+
+body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
