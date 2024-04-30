@@ -73,7 +73,7 @@ DE LOJA
     margin-bottom: 2rem;
     grid-area: titulo;
     text-transform: uppercase;
-    color: #000;
+    color: black;
     font-size: 3rem;
     font-family: var(--fonte-primaria);
     font-weight: 800;
@@ -243,7 +243,7 @@ DE PETS
 
 .container__adocao__animais__animal-adotavel__nome {
     justify-self: center;
-    color: #000;
+    color: black;
     font-family: var(--fonte-primaria);
     font-weight: 800;
     font-size: 2rem;
@@ -291,6 +291,7 @@ DE ENDEREÇO
 .container__endereco {
     background-color: var(--cor-marrom);
     padding: 2rem;
+    column-gap: 2rem;
     display: grid;
     align-items: center;
     grid-template-areas: 
@@ -320,4 +321,57 @@ DE ENDEREÇO
     align-self: start;
     grid-area: enderecoLocal;
     color: white;
+}
+
+/* 
+ESTILIZANDO
+A SEÇÃO
+DE CONTATO
+*/
+.container__contato {
+    background-color: var(--cor-amarelo2);
+    padding: 2rem 0;
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+    grid-template-areas: 
+                        "tituloSuporte"
+                        "nomeSuporte"
+                        "emailSuporte"
+                        "celularSuporte"
+                        "assuntoSuporte";
+}
+
+.container__contato__titulo {
+    text-transform: uppercase;
+    justify-self: center;
+    font-family: var(--fonte-primaria);
+    font-size: 4rem;
+    font-weight: 800;
+    color: black;
+}
+
+.container__contato__texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte-primaria);
+    justify-self: center;
+    align-self: start;
+    color: black;
+}
+
+.container__contato__botao {
+    justify-self: center;
+    align-self: start;
+    background: var(--cor-marrom);
+    color: white;
+    font-weight: 800;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.container__contato__botao:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
