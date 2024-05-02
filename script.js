@@ -36,10 +36,10 @@ let menuHamburguerBotao = document.querySelector('#menuHamburguer');
 let menu = document.querySelector('.cabecalho__navegacao__itens');
 
 menuHamburguerBotao.addEventListener('click', () => {
-
-    if (menu.style.display === 'none') {
-        menu.style.display = 'flex';
-    } else {
-        menu.style.display = 'none';
-    }
+    menu.classList.toggle('active')
+    // if (menu.style.display === 'none') {
+    //     menu.style.display = 'flex';
+    // } else {
+    //     menu.style.display = 'none';
+    // }
 })

@@ -1,4 +1,10 @@
-@media (min-width: 868px) {
+.active {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 868px) {
     .cabecalho__navegacao__itens {
         display: flex;
     }
@@ -9,13 +15,13 @@
 
 @media (max-width: 867px) {
     .cabecalho__navegacao__itens {
-        position: absolute;
         display: none;
+        position: absolute;
         text-align: center;
         background-color: var(--cor-amarelo1); 
-        flex-direction: column;
         z-index: 10;
         border-radius: 15px;
+        gap: 1rem;
     }
     .cabecalho__navegacao__itens__item {
         padding: 0.5rem;
