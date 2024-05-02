@@ -1,4 +1,10 @@
-@media (max-width: 500px) {
+@media (max-width: 960px) {
+    .cabecalho__navegacao__itens {
+        display: none;
+    }
+}
+
+@media (max-width: 847px) {
     .cabecalho__navegacao__itens {
         display: none;
     }
@@ -29,14 +35,12 @@
     }
     .container__adocao__animais__animal {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         grid-template-areas: 
                             "animal1"
                             "animal2"
                             "animal3"
-                            "animal4"
-                            "animal5"
-                            "animal6";
+                            "animal4";
     }
     .container__endereco {
         row-gap: 3rem;
@@ -45,11 +49,50 @@
                             "enderecoTitulo"
                             "enderecoLocal";
     }
+    .container__loja__produtos {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+                            "produto1" 
+                            "produto2" 
+                            "produto3"
+                            "produto4" 
+                            "produto5" 
+                            "produto6";
+    }
     .container__endereco__foto {
 
         justify-self: center;
     }
     .container__endereco__local {
         text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .container__sobre__texto {
+        font-size: 0.8rem;
+    }
+    
+    .container__sobre__titulo,
+    .container__loja__titulo {
+        font-size: 1rem;
+    }
+    .container__adocao__animais-animal {
+        font-size: 0.9rem;
+    }
+    .container__adocao__animais__foto {
+        max-width: 8rem;
+        height: 8rem;
+    }
+    .container__endereco__foto {
+        width: 12rem;
+    }
+    .container__endereco__local {
+        font-size: 1.2rem;
+    }
+    .container__endereco__titulo,
+    .container__contato__titulo {
+        font-size: 1.9rem;
     }
 }

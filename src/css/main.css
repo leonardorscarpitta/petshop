@@ -173,6 +173,7 @@ DE ADOÇÃO
     background-color: var(--cor-marrom);
     display: grid;
     row-gap: 2rem;
+    column-gap: 1rem;
     align-items: center;
     grid-template-areas: 
                         "gatoT cachorroT"
@@ -230,7 +231,7 @@ DE PETS
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
                         "animal1 animal2 animal3"
-                        "animal4 animal5 animal6";
+                        "animal4 animal4 animal4";
 }
 
 .container__adocao__animais__animal-adotavel {
