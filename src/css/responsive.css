@@ -1,12 +1,28 @@
-@media (max-width: 960px) {
+@media (min-width: 868px) {
     .cabecalho__navegacao__itens {
+        display: flex;
+    }
+    #menuHamburguer {
         display: none;
     }
 }
 
-@media (max-width: 847px) {
+@media (max-width: 867px) {
     .cabecalho__navegacao__itens {
+        position: absolute;
         display: none;
+        text-align: center;
+        background-color: var(--cor-amarelo1); 
+        flex-direction: column;
+        z-index: 10;
+        border-radius: 15px;
+    }
+    .cabecalho__navegacao__itens__item {
+        padding: 0.5rem;
+    }
+    .cabecalho__navegacao__itens__item:hover {
+        color: var(--cor-marrom);
+        background-color: var(--cor-amarelo1);
     }
     .container__carrosssel__imagem {
         width: 100%;

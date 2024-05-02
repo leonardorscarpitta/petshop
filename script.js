@@ -23,11 +23,23 @@ const contato = {
     email: document.getElementById('email'),
     enviar: document.getElementById('btnEnviar')
 }
-
 contato.enviar.addEventListener('click', () => {
     if (contato.nome.value.length == '' || contato.assunto.value.length == '' || contato.numero.value.length == '' || contato.email.value.length == '') {
         swal('Verifique os campos em branco!');
     } else {
         swal('Mensagem enviada com sucesso! Aguarde pela resposta em seu e-mail!')
+    }
+})
+
+// Menu hamburguer
+let menuHamburguerBotao = document.querySelector('#menuHamburguer');
+let menu = document.querySelector('.cabecalho__navegacao__itens');
+
+menuHamburguerBotao.addEventListener('click', () => {
+
+    if (menu.style.display === 'none') {
+        menu.style.display = 'flex';
+    } else {
+        menu.style.display = 'none';
     }
 })

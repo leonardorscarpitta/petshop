@@ -15,3 +15,7 @@
     --fonte-primaria: "Roboto", sans-serif;
     --fonte-secundaria: "Rubik Mono One", monospace;
 }
+
+.active {
+    display: block;
+}

@@ -37,6 +37,11 @@
     opacity: 0.7;
 }
 
+#menuHamburguer {
+    background: none;
+    border: none;
+}
+
 .cabecalho__icone {
     width: 3rem;
     justify-self: end;
