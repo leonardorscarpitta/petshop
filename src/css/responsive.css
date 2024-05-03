@@ -5,8 +5,12 @@
 }
 
 @media (max-width: 867px) {
+    #menuHamburguer {
+        z-index: 10;
+    }
     .cabecalho__navegacao__itens {
         flex-direction: column;
+        z-index: 9;
     }
     .cabecalho__navegacao__itens {
         flex-direction: column;
