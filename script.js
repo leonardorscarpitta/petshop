@@ -37,9 +37,4 @@ let menu = document.querySelector('.cabecalho__navegacao__itens');
 
 menuHamburguerBotao.addEventListener('click', () => {
     menu.classList.toggle('active')
-    // if (menu.style.display === 'none') {
-    //     menu.style.display = 'flex';
-    // } else {
-    //     menu.style.display = 'none';
-    // }
 })
