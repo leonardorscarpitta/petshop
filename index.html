@@ -14,21 +14,21 @@
         <h1 class="cabecalho__titulo">Patinhas Online</h1>
         <nav id="cabecalho__navegacao">
             <ul class="cabecalho__navegacao__itens">
-                <li class="cabecalho__navegacao__itens__item">Home</li>
-                <li class="cabecalho__navegacao__itens__item">Sobre</li>
-                <li class="cabecalho__navegacao__itens__item">Produtos & Pets</li>
-                <li class="cabecalho__navegacao__itens__item">Contato</li>
+                <li class="cabecalho__navegacao__itens__item"><a href="#home">Home</a></li>
+                <li class="cabecalho__navegacao__itens__item"><a href="#sobre">Sobre</a></li>
+                <li class="cabecalho__navegacao__itens__item"><a href="#produtosepets">Produtos & Pets</a></li>
+                <li class="cabecalho__navegacao__itens__item"><a href="#contato">Contato</a></li>
             </ul>
         </nav>
         <button id="menuHamburguer"><img class="cabecalho__icone" src="./src/assets/coracaopata.png" alt="Icone de um coração com uma pata"></button>
     </header>
 
     <main class="container">
-        <section class="container__carrossel">
+        <section id="home" class="container__carrossel">
             <img class="container__carrosssel__imagem" src="./src/assets/banner1.jpg" alt="imagens do carrossel">
         </section>
 
-        <section class="container__sobre">
+        <section class="container__sobre" id="sobre">
             <h2 class="container__sobre__titulo">Sobre Nós</h2>
             <h2 class="container__sobre__texto">"Somos mais que um simples Pet Shop. Somos o elo entre você e seu companheiro de quatro patas. Aqui, no coração da nossa loja, pulsamos paixão por todos os seres de estimação. Desde o momento em que você entra, sua jornada conosco é marcada pelo cuidado, expertise e amor que dedicamos a cada cliente peludo.
             <br><br>
@@ -38,7 +38,7 @@
             <img class="container__sobre__foto" src="./src/assets/cachorrocomoculos.png" alt="foto de um cachorro com oculos">
         </section>
 
-        <section class="container__loja">
+        <section class="container__loja" id="produtosepets">
             <h2 class="container__loja__titulo">O melhor para seu pet:</h2>
             <div class="container__loja__produtos">
 
@@ -138,7 +138,7 @@
             <p class="container__endereco__local">Av. Paulista, 1106 - 7º andar - Bela Vista, São Paulo - SP, 01311-000</p>
         </section>
 
-        <section class="container__contato">
+        <section class="container__contato" id="contato">
             <h2 class="container__contato__titulo">Suporte 24h</h2>
             <p class="container__contato__texto">Nome: <input type="text" id="nome"> </p>
             <p class="container__contato__texto">E-Mail <input type="email"id="email"> </p>

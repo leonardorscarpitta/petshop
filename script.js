@@ -36,5 +36,5 @@ let menuHamburguerBotao = document.querySelector('#menuHamburguer');
 let menu = document.querySelector('.cabecalho__navegacao__itens');
 
 menuHamburguerBotao.addEventListener('click', () => {
-    menu.classList.toggle('active')
+    menu.classList.toggle('active');
 })
