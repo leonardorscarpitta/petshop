@@ -4,12 +4,12 @@
     grid-template-columns: 2fr 4fr 1fr;
     grid-template-areas: "titulo menu icone-header";
     padding: 2rem;
-    background-color: var(--cor-amarelo1);
+    background-color: var(--cor-terciaria);
 }
 
 .cabecalho__titulo {
     text-transform: uppercase;
-    color: var(--cor-marrom);
+    color: var(--cor-primaria);
     grid-area: titulo;
     font-size: 1rem;
     font-family: var(--fonte-secundaria);
@@ -23,9 +23,9 @@
     transition: all .3s;
 }
 
-.cabecalho__navegacao__itens__item {
+.cabecalho__navegacao__itens__item a {
     text-transform: uppercase;
-    color: var(--cor-marrom);
+    color: var(--cor-primaria);
     grid-area: menu;
     font-size: 1rem;
     font-family: var(--fonte-secundaria);
@@ -40,6 +40,7 @@
 #menuHamburguer {
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 .cabecalho__icone {
